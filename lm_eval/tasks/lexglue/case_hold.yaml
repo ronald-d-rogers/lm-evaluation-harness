@@ -1,0 +1,23 @@
+group:
+  - lex_glue
+  - multiple_choice
+  - legal_word_prob
+task: casehold
+dataset_path: lex_glue
+dataset_name: case_hold
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+test_split: test
+doc_to_text: "Question: {{context}}\nAnswer:"
+doc_to_target: "{{label}}"
+doc_to_choice: "{{endings}}"
+should_decontaminate: true
+doc_to_decontamination_query: "Question: {{context}}\nAnswer:"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
