@@ -2,7 +2,7 @@ group:
   - lex_glue
   - multiple_choice
   - legal_word_prob
-task: casehold
+task: case_hold
 dataset_path: lex_glue
 dataset_name: case_hold
 output_type: multiple_choice
