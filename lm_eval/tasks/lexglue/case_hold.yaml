@@ -1,7 +1,7 @@
 group:
   - lex_glue
+  - legal
   - multiple_choice
-  - legal_word_prob
 task: case_hold
 dataset_path: lex_glue
 dataset_name: case_hold
