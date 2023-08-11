@@ -9,7 +9,7 @@ output_type: multiple_choice
 training_split: train
 validation_split: validation
 test_split: test
-doc_to_text: "Question: Given the following legal decision excerpt, which of the holdings which best fills in the mask (i.e. replaces <HOLDING>)?\n\n{{context}}\n\nAnswer:"
+doc_to_text: "Question: Given the legal decision excerpt, which of the holdings which best fills in the mask (i.e. \"<HOLDING>\")?\n\n{{context}}\n\nAnswer:"
 doc_to_target: "{{label}}"
 doc_to_choice: "{{endings}}"
 should_decontaminate: true
