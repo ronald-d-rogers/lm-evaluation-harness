@@ -1,7 +1,7 @@
 def num_to_abcs(num):
     letters = []
     for i in range(num):
-        letters.append(chr(i + 97))
+        letters.append(chr(i + 65))
     return letters
 
 
