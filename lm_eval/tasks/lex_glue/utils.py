@@ -13,7 +13,7 @@ def doc_to_text(doc):
         choices[i] = choices[i] + ") " + endings[i]
 
     choices = "\n".join(choices)
-    text = f"Given the legal decision excerpt, choose the letter corresponding to the holding that best fills in the masked \"<HOLDING>\"\n\nExcerpt:\n{doc['context']}\n\nChoices:\n{choices}\n\nAnswer:"
+    text = f"Given the legal decision excerpt, which holding best fills in the masked \"<HOLDING>\"?\n\nContext:\n{doc['context']}\n\nHoldings:\n{choices}\n\nAnswer:"
 
     return text
 
