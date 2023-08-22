@@ -10,7 +10,7 @@ Context:
 Holdings:
 {newline.join([f"{i}. {endings[i]}" for i in range(len(endings))])}
 
-Answer: """
+Answer: """.lstrip()
 )
 
 
@@ -22,7 +22,7 @@ def alphabetical(num):
 
 
 def doc_to_text(doc):
-    return prompt(doc["context"], doc["choices"])
+    return prompt(doc["context"], doc["endings"])
 
 
 def doc_to_choice(doc):

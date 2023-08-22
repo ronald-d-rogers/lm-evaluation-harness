@@ -27,7 +27,7 @@ Context:
 Issue areas:
 {newline.join(scotus_classes)}
 
-Answer: """
+Answer: """.lstrip()
 )
 
 
