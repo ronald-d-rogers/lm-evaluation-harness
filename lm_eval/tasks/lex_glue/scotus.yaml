@@ -2,18 +2,18 @@ group:
   - lex_glue
   - legal
   - multiple_choice
-task: case_hold
+task: scotus
 dataset_path: lex_glue
-dataset_name: case_hold
+dataset_name: scotus
 output_type: multiple_choice
 training_split: train
 validation_split: validation
 test_split: test
-doc_to_text: !function case_hold.doc_to_text
+doc_to_text: !function utils.doc_to_text
 doc_to_target: "{{label}}"
-doc_to_choice: !function case_hold.doc_to_choice
+doc_to_choice: !function utils.doc_to_choice
 should_decontaminate: true
-doc_to_decontamination_query: "{{context}}"
+doc_to_decontamination_query: "{{text}}"
 metric_list:
   - metric: acc
     aggregation: mean
